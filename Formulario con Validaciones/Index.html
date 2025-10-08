@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto de validacion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id ="registroForm">
+        <h2>Formulario de Registro</h2>
+
+        <form id="form" novalidate>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required
+                autocomplete="off" minlength="3">
+               <div class="error" id="nameError"></div>
+        <br>
+            <label for="lastname">Lastname:</label>
+            <input type="text" name="lastname" id="lastname" required minlength="3" autocomplete="off">
+            <div class="error" id="lastnameError"></div>
+        <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required autocomplete="off">
+            <div class="error" id="emailError"></div>
+        <br>
+            <label for="document">Document:</label>
+            <input type="text" name="document" id="document" required minlength="3" autocomplete="off">
+            <div class="error" id="documentError"></div>
+        <br>
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age" required minlength="2" autocomplete="off">
+        <div class="error" id="ageError"></div>
+        <br>
+
+        <label for="job">Actividad</label>
+        <select name="job" id="job">
+            <option value="">Seleccione</option>
+            <option value="tech">tecnologia</option>
+            <option value="program">programacion</option>
+            <option value="sports">deportes</option>
+            <option value="medicine">medicina</option>
+            <option value="construcction">construcciion</option>
+        </select>
+        <div class="error" id="jobError"></div>
+        <br>
+
+        <label for="studies">Nivel de estudio:</label>
+        <select name="studies" id="studies">
+            <option value="">Seleccione</option>
+            <option value="secondary">Secundario</option>
+            <option value="college">Terciario</option>
+            <option value="university">Universitario</option>
+            <option value="postgraduate">Postgrado</option> 
+            <option value="doctorate">Doctorado</option>
+        </select>
+        <div class="error" id="studiesError"></div>
+        <br>
+
+        <label for="inline"></label>
+        <input type="checkbox" name="inline" id="inline">
+        <span id="legend">Acepto terminos y condiciones</span>
+    
+        <label for="inline"></label>
+        <input type="checkbox" name="publicity" id="publicity">
+        <span id="legend">Ofertas</span>
+        <label for="inline"></label>
+        <input type="checkbox" name="news" id="news">
+        <span id="legend">Novedades</span>
+        <div class="error" id="inlineError"></div>
+        <br>
+        <input type="submit" value="Enviar" id="submitBtn">    
+    
+    </form>
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

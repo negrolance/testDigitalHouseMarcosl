@@ -1,0 +1,82 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 207);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#registroForm{
+    background-color: rgb(251, 252, 167);
+    border-radius: 10px;
+    box-shadow: 01px 01px 10px rgb(0, 0, 0,0.5);
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    
+}
+
+label{
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+label.inline{
+    display: inline-block;
+    font-weight: normal;
+}
+
+input,select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-weight: 900;
+}   
+
+input[type="text"],
+input[type="number"],
+input[type="email"]{
+    background-color: rgb(255, 255, 255);
+    border: rgb(189, 198, 128) 2px solid;
+    cursor: pointer;
+}
+#legend{
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+input[type="submit"]{
+    background-color: rgb(189, 198, 128);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .5s all;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(115, 128, 50);
+}
+
+.error{
+    border: none;
+    font-size: 14px;
+    color: red;
+
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- acá incorporamos CSS-->
+    <title>Document</title>
+</head>
+<body >  
+    <h1>Local Storage</h1>
+    <input type=" text" name="firstName" id="firstname" placeholder="First Name">
+    <input type=" text" name="lastName" id="lastname" placeholder="Last Name">
+    <input type="number" name="age" id="age" placeholder="Age">
+    <br>
+    <button id="saveBtn" onclick="saveBTN()">Save</button>
+    <button id="deleteBtn" onclick="deleteBTN()">Delete</button>
+    <button id="showBtn" onclick="showBTN()">Show</button>
+
+    <p id="userData"></p>
+
+    <button onclick="doAnAction()">Realizar una accion</button>
+    <button onclick="doAnAction2()">Realizar una accion2</button>
+    <script src="dom.js"></script>
+</body>
+</html>
