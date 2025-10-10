@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link type="image/png" sizes="16x16" rel="icon" href="icons8-key-16.ico">
+    <title>login
+
+    </title>
+</head>
+<body>
+    <form id="loginForm" novalidate>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required autocomplete="off">
+        <div class="error" id="emailError"></div>
+        <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required minlength="8" autocomplete="off">
+            <span id="show-hide"> show-hide</span>
+            <div class="error" id="passwordError"></div>
+        <br>
+         <br>
+            <label for="confirmPassword" >Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" autocomplete="off">
+            <div class="error" id="confirmPasswordError"></div>
+        <br>
+        <input type="submit" value="Login"  >
+
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
