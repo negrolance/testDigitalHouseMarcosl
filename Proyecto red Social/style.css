@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(167, 5, 167);
+    font-family:  "Ubuntu", sans-serif;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 60%;
+}
+
+h1,h2{
+    color: white;
+    font-weight: 600;
+
+}
+
+button{
+    width: 30%;
+    height: 50px;
+    padding: 5px 12px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 800;
+    align-items: center;
+    border: 2px orange solid;
+    border-radius: 20px;
+    transition: .5s all ease;
+}
+
+button:hover{
+    background-color: pink;
+    color: black;
+}
+
+form{
+    margin-top: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 10px ;
+}
+
+
+.postItem{
+    background-color: rgba(94, 3, 151, 0.317);
+    max-width: 100%;
+    border: 3px rgb(114, 3, 114) solid;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+.editForm{
+    background-color: red;
+}
